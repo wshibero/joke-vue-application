@@ -8,7 +8,7 @@
     <div>
       <button @click="selectDiv('1')">Computer Stored Jokes</button>
       <button @click="selectDiv('2')">User Generated jokes</button>
-      <button @click="selectDiv('3')">Third View</button>
+      <button @click="selectDiv('3')">From a Joke Api</button>
     </div>
     <div v-if="selectedDiv === '1'">
       <OfflineJokes />
@@ -16,19 +16,23 @@
     <div v-if="selectedDiv === '2'">
       <UserGeneratedJokes />
     </div>
-    <div v-if="selectedDiv === '3'"><OfflineJokes /></div>
+    <div v-if="selectedDiv === '3'">
+      <ApiGeneratedJokes/>
+    </div>
   </div>
 </template>
 
 <script>
   import OfflineJokes from './components/OfflineJokes.vue';
   import UserGeneratedJokes from './components/UserGeneratedJokes.vue';
+  import ApiGeneratedJokes from './components/ApiGeneratedJokes.vue';
 
   export default{
     name: 'App',
     components: {
       OfflineJokes,
-      UserGeneratedJokes
+      UserGeneratedJokes,
+      ApiGeneratedJokes
     },
     data() {
       return {
