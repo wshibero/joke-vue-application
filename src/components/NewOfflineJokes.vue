@@ -15,7 +15,7 @@
            'A bossy man walked into a bar. Then ordered everyone a round.',
            'I only catch cold on weekdays. Probably because I have a weekend immune system.',
            'Why did the roofer go to the doctor? He had shingles.'],
-        joke: jokes[Math.floor(Math.random() * jokes.length)]
+        joke: ''
       }
     },
     methods:{

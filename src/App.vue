@@ -13,21 +13,19 @@
   <h1>Jokes Application</h1>
   <!--<OfflineJokes/>-->
   <div id="app">
-    <!--<NameChanger />-->
-  </div>
-  <div id='app'>
+    <NameChanger />
     <NewOfflineJokes/>
   </div>
 </template>
 
 <script>
-// import NameChanger from './components/NameChanger.vue';
+import NameChanger from './components/NameChanger.vue';
 import NewOfflineJokes from './components/OfflineJokes.vue';
 
 export default {
   name: 'App',
   components: {
-    // NameChanger,
+    NameChanger,
     NewOfflineJokes
   }
 };
