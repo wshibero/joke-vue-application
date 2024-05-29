@@ -38,6 +38,9 @@
       </div>
     </fieldset>
   </div>
+  <footer>
+    &copy 2024. Intellectual property of derrick shibero
+  </footer>
 </template>
 
 <script>

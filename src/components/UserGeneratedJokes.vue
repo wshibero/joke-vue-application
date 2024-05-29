@@ -26,7 +26,7 @@
       <fieldset>
         <legend>New Joke</legend>
         <input type='text' placeholder='enter a joke' v-model='joke1'/>
-        <button @click='submitJoke'>Submit</button>
+        <button @click='submitJoke' id='usubmit-btn'>Submit</button>
       </fieldset>
     </div>
     <div v-else-if="activeDiv === 1">
@@ -84,9 +84,3 @@ export default {
   },
 };
 </script>
-
-<style>
-  table{
-    width: 100%;
-  }
-</style>

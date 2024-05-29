@@ -16,6 +16,7 @@ input[type='text']:focus{
 
 td, tr{
   border: none;
+  border-right: 3px solid brown;
   border-bottom: 3px solid #ccc;
 }
 
@@ -38,6 +39,23 @@ td>a:hover{
   color: blue;
   text-decoration: underline;
   font-style: italic;
+}
+
+table{
+  width: 100%;
+}
+
+
+button{
+  color: green;
+  border: 2px outset lightgreen;
+  background-color: white;
+}
+
+button:hover, button:focus{
+  color: ghostwhite;
+  background-color: green;
+  border: 2px inset green;
 }
 
 p{
