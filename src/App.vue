@@ -11,8 +11,22 @@
 
 <template>
   <h1>Jokes Application</h1>
-  <OfflineJokes/>
+  <!--<OfflineJokes/>-->
+  <div id="app">
+    <NameChanger />
+  </div>
 </template>
+
+<script>
+import NameChanger from './components/NameChanger.vue';
+
+export default {
+  name: 'App',
+  components: {
+    NameChanger
+  }
+};
+</script>
 
 <style>
   
