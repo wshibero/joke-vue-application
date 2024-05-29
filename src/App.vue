@@ -6,23 +6,29 @@
   <h1>The Jokes Application</h1>
   <div id='App'>
     <div>
-      <button @click="selectDiv('1')">First View</button>
-      <button @click="selectDiv('2')">Second View</button>
+      <button @click="selectDiv('1')">Computer Stored Jokes</button>
+      <button @click="selectDiv('2')">User Generated jokes</button>
       <button @click="selectDiv('3')">Third View</button>
     </div>
-    <div v-if="selectedDiv === '1'"><OfflineJokes /></div>
-    <div v-if="selectedDiv === '2'"><OfflineJokes /></div>
+    <div v-if="selectedDiv === '1'">
+      <OfflineJokes />
+    </div>
+    <div v-if="selectedDiv === '2'">
+      <UserGeneratedJokes />
+    </div>
     <div v-if="selectedDiv === '3'"><OfflineJokes /></div>
   </div>
 </template>
 
 <script>
   import OfflineJokes from './components/OfflineJokes.vue';
+  import UserGeneratedJokes from './components/UserGeneratedJokes.vue';
 
   export default{
     name: 'App',
     components: {
-      OfflineJokes
+      OfflineJokes,
+      UserGeneratedJokes
     },
     data() {
       return {
