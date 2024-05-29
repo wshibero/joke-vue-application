@@ -1,36 +1,18 @@
-<script setup>
-  import {ref} from 'vue'
-  import OfflineJokes from './components/OfflineJokes.vue'
-  // export default{
-  //   name: 'App',
-  //   components: {
-  //     OfflineJokes
-  //   }
-  // }
-</script>
-
 <template>
-  <h1>Jokes Application</h1>
-  <!--<OfflineJokes/>-->
-  <div id="app">
-    <NameChanger />
-    <NewOfflineJokes/>
+  <h1>Hello World</h1>
+  <div id='App'>
+    <OfflineJokes />
   </div>
 </template>
 
 <script>
-import NameChanger from './components/NameChanger.vue';
-import NewOfflineJokes from './components/OfflineJokes.vue';
+  import OfflineJokes from './components/OfflineJokes.vue';
 
-export default {
-  name: 'App',
-  components: {
-    NameChanger,
-    NewOfflineJokes
+  export default{
+    name: 'App',
+    components: {
+      OfflineJokes
+    }
   }
-};
-</script>
-
-<style>
   
-</style>
+</script>
