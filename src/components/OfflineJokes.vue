@@ -116,21 +116,21 @@
   //       ])
 
 
-  // const joke = ref(['Why didn\’t the elf pay his rent? He was a little short.',
-  //                  'Why shouldn\’t you eat clowns? They taste funny.',
-  //                  'When does a dad joke become a dad joke? When it becomes apparent.',
-  //                  'A bossy man walked into a bar. Then ordered everyone a round.',
-  //                  'I only catch cold on weekdays. Probably because I have a weekend immune system.',
-  //                  'Why did the roofer go to the doctor? He had shingles.'])
+  const joke = ref(['Why didn\’t the elf pay his rent? He was a little short.',
+                   'Why shouldn\’t you eat clowns? They taste funny.',
+                   'When does a dad joke become a dad joke? When it becomes apparent.',
+                   'A bossy man walked into a bar. Then ordered everyone a round.',
+                   'I only catch cold on weekdays. Probably because I have a weekend immune system.',
+                   'Why did the roofer go to the doctor? He had shingles.'])
   
-  // const getJoke = ()=>{
-  //   return jokes[Math.floor(Math.random() * jokes.length)]
-  // }
+  const getJoke = ()=>{
+    return jokes[Math.floor(Math.random() * jokes.length)]
+  }
 
-  // const myjokes = ref(getJoke())
-  // const returnJoke = () =>{
-  //   myjokes.value = getJoke()
-  // }
+  const myjokes = ref(getJoke())
+  const returnJoke = () =>{
+    myjokes.value = getJoke()
+  }
 </script>
 
 <template>

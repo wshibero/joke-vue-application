@@ -1,6 +1,6 @@
 <script setup>
   import {ref} from 'vue'
-  // import OfflineJokes from './components/OfflineJokes.vue'
+  import OfflineJokes from './components/OfflineJokes.vue'
   // export default{
   //   name: 'App',
   //   components: {
