@@ -5,3 +5,28 @@
 input[type='text']{
   width: 80%
 }
+
+td, tr{
+  border: none;
+  border-bottom: 3px solid #ccc;
+}
+
+td{
+  padding: 3px;
+  background-color: brown;
+}
+
+td>a{
+  color: ghostwhite;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+td:hover{
+  background-color: hotpink;
+}
+
+td>a:hover{
+  color: blue;
+  text-decoration: underline;
+  font-style: italic;
+}

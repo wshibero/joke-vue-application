@@ -1,9 +1,25 @@
 <template>
   <h1>User Generated Jokes</h1>
   <div>
-    <button @click="div1selected">Display a joke</button>
-    <button @click="showDiv(2)">Create New Joke</button>
-    <button @click="showDiv(3)">All Jokes</button>
+    <table>
+      <tr>
+        <td>
+          <a @click="div1selected">
+            Display a joke
+          </a>
+        </td>
+        <td>
+          <a @click="showDiv(2)">
+            Create New Joke
+          </a>
+        </td>
+        <td>
+          <a @click="showDiv(3)">
+            All Jokes
+          </a>
+        </td>
+      </tr>
+    </table>
 
     <div v-if="activeDiv === 2">
       <fieldset>
