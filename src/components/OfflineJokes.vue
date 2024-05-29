@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>The new Joke Component</h1>
+    <h1>The Computer stored Jokes</h1>
     <p>{{njoke}}</p>
     <button @click='getjoke'>new joke</button>
   </div>
