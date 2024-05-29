@@ -1,9 +1,17 @@
 *{
   margin: 0;
+  font-size: 25px;
 }
 
 input[type='text']{
-  width: 80%
+  padding: 5px;
+  width: 70%;
+  border: none;
+  border-bottom: 3px inset #ccc;
+}
+
+input[type='text']:focus{
+  outline: none;
 }
 
 td, tr{
@@ -23,10 +31,15 @@ td>a{
 
 td:hover{
   background-color: hotpink;
+  border: none;
 }
 
 td>a:hover{
   color: blue;
   text-decoration: underline;
   font-style: italic;
+}
+
+p{
+  
 }

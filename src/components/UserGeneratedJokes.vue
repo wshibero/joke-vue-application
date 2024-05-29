@@ -1,5 +1,6 @@
 <template>
   <h1>User Generated Jokes</h1>
+  
   <div>
     <table>
       <tr>
@@ -83,3 +84,9 @@ export default {
   },
 };
 </script>
+
+<style>
+  table{
+    width: 100%;
+  }
+</style>
