@@ -15,6 +15,7 @@
     <div v-else-if="activeDiv === 1">
       <p>The joke for now is:
         <br/> {{ijoke}}</p>
+      <button @click='displayJoke'>Generate a new Joke</button>
     </div>
     <div v-else-if="activeDiv === 3">
       <h2>All Jokes</h2>
@@ -49,6 +50,7 @@ export default {
       }else{
         this.userjokes.push(this.joke1);
         this.joke1 = '';
+        this.showDiv(3);
       }
     },
     displayJoke(){
